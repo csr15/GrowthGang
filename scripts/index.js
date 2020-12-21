@@ -10,7 +10,7 @@ const topFunction = () => {
 };
 
 var t1 = gsap.timeline({
-  defaults: { duration: 0.7, ease: Back.easeOut.config(2), opacity: 0 },
+  defaults: { duration: 0.7, opacity: 0 },
 });
 
 t1.from(
