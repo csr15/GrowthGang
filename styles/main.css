@@ -36,7 +36,7 @@ a {
 }
 
 .header_title, .nav_header_wrapper .jumbotron h1, .how .how_content h1, .startup .startup_content h4, .our_methods h4, .contact .contact_content h5 {
-  font-size: 45px;
+  font-size: 37px;
   margin: 10px 0px 50px 0px;
   position: relative;
   font-family: multi;
@@ -155,6 +155,11 @@ a {
   margin: 15px 0px;
 }
 
+.nav_header_wrapper .jumbotron h1 span {
+  white-space: nowrap;
+  margin: 0px;
+}
+
 .nav_header_wrapper .jumbotron p {
   font-size: 18px;
   width: 70%;
@@ -226,6 +231,7 @@ a {
 .startup .startup_content h1 {
   margin: 120px 100px 10px 0px;
   font-family: multi;
+  font-size: 37px;
 }
 
 .startup .startup_content p {
@@ -252,6 +258,7 @@ a {
   color: #b9b9b9;
   font-weight: 400;
   margin: 30px auto 50px auto;
+  font-size: 37px;
 }
 
 .our_work h1 span {
@@ -308,6 +315,7 @@ a {
 .our_methods h1 {
   margin: 0px 0px 15px 0px;
   font-family: multi;
+  font-size: 37px;
 }
 
 .our_methods p {
@@ -349,6 +357,7 @@ a {
   font-weight: 400;
   margin: 15px 0px;
   font-family: multi;
+  font-size: 37px;
 }
 
 .contact .contact_content h5 {
@@ -696,6 +705,9 @@ a {
   }
   .nav_header_wrapper .navbar ul li a {
     margin-left: 30px;
+  }
+  .nav_header_wrapper .jumbotron h1 span {
+    white-space: normal;
   }
   .nav_header_wrapper .jumbotron {
     margin-top: 50px;

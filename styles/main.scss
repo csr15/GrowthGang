@@ -44,7 +44,7 @@ a {
 }
 
 .header_title {
-  font-size: 45px;
+  font-size: 37px;
   margin: 10px 0px 50px 0px;
   position: relative;
   font-family: multi;
@@ -158,6 +158,11 @@ a {
     }
     h1 {
       @extend .header_title;
+
+      span {
+        white-space: nowrap;
+        margin: 0px;
+      }
     }
 
     p {
@@ -233,6 +238,7 @@ a {
     h1 {
       margin: 120px 100px 10px 0px;
       font-family: multi;
+      font-size: 37px;
     }
     p {
       width: 70%;
@@ -261,6 +267,7 @@ a {
     color: #b9b9b9;
     font-weight: 400;
     margin: 30px auto 50px auto;
+    font-size: 37px;
 
     span {
       color: $black;
@@ -315,6 +322,7 @@ a {
   h1 {
     margin: 0px 0px 15px 0px;
     font-family: multi;
+    font-size: 37px;
   }
 
   p {
@@ -347,6 +355,7 @@ a {
       font-weight: 400;
       margin: 15px 0px;
       font-family: multi;
+      font-size: 37px;
     }
 
     h5 {
@@ -536,9 +545,9 @@ a {
     }
   }
 
-  .our_methods{
+  .our_methods {
     height: 450px;
-    h4{
+    h4 {
       margin-bottom: 60px;
     }
   }
@@ -686,6 +695,13 @@ a {
       ul {
         li a {
           margin-left: 30px;
+        }
+      }
+    }
+    .jumbotron {
+      h1 {
+        span {
+          white-space: normal;
         }
       }
     }
