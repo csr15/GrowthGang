@@ -128,10 +128,12 @@ a {
     background: transparent;
     margin: 30px auto;
     color: $white;
+    height: 100%;
 
     .linear-gradient {
       width: 100vw;
-      height: 100vh;
+      max-height: 900px;
+      height: 800px;
       position: absolute;
       background: rgba(0, 0, 0, 0.6);
       z-index: -1;
@@ -141,7 +143,8 @@ a {
 
     video {
       width: 100vw;
-      height: 100%;
+      max-height: 900px;
+      height: 800px;
       position: absolute;
       left: 0%;
       top: 0%;
@@ -318,14 +321,23 @@ a {
     font-size: 18px;
   }
   img {
-    width: 100%;
+    width: 70%;
+    object-fit: contain;
+  }
+
+  .col-md-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 //Contact
 .contact {
-  height: 70vh;
+  height: auto;
   background: $black;
+  max-height: 500px;
+  height: 500px;
 
   .contact_content {
     color: $white;
@@ -398,9 +410,10 @@ a {
 
 //Footer
 .footer {
-  height: 30vh;
+  height: auto;
   background: #525252;
   color: $white;
+  padding: 2rem 0.3rem 1rem 0.3rem;
 
   .footer-wrapper {
     display: flex;
@@ -510,6 +523,14 @@ a {
     .navbar-collapse {
       background-color: rgba(0, 0, 0, 1);
     }
+    .navbar-brand {
+      margin-left: 15px;
+    }
+    ul {
+      li a {
+        margin-left: 15px;
+      }
+    }
     .jumbotron {
       p {
         width: 100%;
@@ -557,14 +578,18 @@ a {
     height: auto;
     padding: 2rem 0.3rem;
     img {
-      width: 60%;
-      margin: 30px auto;
+      width: 35%;
+      margin: 20px auto;
     }
 
-    h4{
+    .our_methods-text {
+      width: 40%;
+    }
+
+    h4 {
       margin: 50px 0px 80px 0px;
     }
-   
+
     p {
       width: 100%;
     }
@@ -596,10 +621,22 @@ a {
   }
   .footer {
     height: auto;
-    padding: 2rem 0.3rem 1rem 0.3rem;
+    padding: 1.5rem 0.3rem 1rem 0.3rem;
   }
 }
 @media (max-width: 630px) {
+  .nav_header_wrapper {
+    .navbar {
+      .navbar-brand {
+        margin-left: 25px;
+      }
+      ul {
+        li a {
+          margin-left: 25px;
+        }
+      }
+    }
+  }
   .how {
     .how_img {
       img {
@@ -612,8 +649,20 @@ a {
 }
 @media (max-width: 560px) {
   .nav_header_wrapper {
+    .navbar {
+      .navbar-brand {
+        margin-left: 30px;
+      }
+      ul {
+        li a {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .nav_header_wrapper {
     .jumbotron {
-      margin-top: 70px;
+      margin-top: 50px;
     }
   }
   .how {
@@ -655,8 +704,11 @@ a {
       font-size: 32px;
     }
     img {
-      width: 50%;
+      width: 35%;
       margin: 20px auto;
+    }
+    .our_methods-text {
+      width: 50%;
     }
   }
   .contact {
@@ -687,8 +739,14 @@ a {
   }
   .our_methods {
     img {
-      width: 55%;
+      width: 40%;
     }
+    .our_methods-text {
+      width: 50%;
+    }
+  }
+  .footer {
+    padding: 1rem 0.3rem 0.5rem 0.3rem;
   }
 }
 @media (max-width: 350px) {
@@ -703,7 +761,10 @@ a {
   }
   .our_methods {
     img {
-      width: 60%;
+      width: 50%;
+    }
+    .our_methods-text {
+      width: 50%;
     }
   }
 }

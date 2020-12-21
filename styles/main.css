@@ -123,11 +123,13 @@ a {
   background: transparent;
   margin: 30px auto;
   color: #ffffff;
+  height: 100%;
 }
 
 .nav_header_wrapper .jumbotron .linear-gradient {
   width: 100vw;
-  height: 100vh;
+  max-height: 900px;
+  height: 800px;
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
   z-index: -1;
@@ -137,7 +139,8 @@ a {
 
 .nav_header_wrapper .jumbotron video {
   width: 100vw;
-  height: 100%;
+  max-height: 900px;
+  height: 800px;
   position: absolute;
   left: 0%;
   top: 0%;
@@ -312,12 +315,28 @@ a {
 }
 
 .our_methods img {
-  width: 100%;
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.our_methods .col-md-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact {
-  height: 70vh;
+  height: auto;
   background: #000000;
+  max-height: 500px;
+  height: 500px;
 }
 
 .contact .contact_content {
@@ -391,9 +410,10 @@ a {
 }
 
 .footer {
-  height: 30vh;
+  height: auto;
   background: #525252;
   color: #ffffff;
+  padding: 2rem 0.3rem 1rem 0.3rem;
 }
 
 .footer .footer-wrapper {
@@ -548,6 +568,12 @@ a {
   .nav_header_wrapper .navbar-collapse {
     background-color: black;
   }
+  .nav_header_wrapper .navbar-brand {
+    margin-left: 15px;
+  }
+  .nav_header_wrapper ul li a {
+    margin-left: 15px;
+  }
   .nav_header_wrapper .jumbotron p {
     width: 100%;
   }
@@ -586,8 +612,11 @@ a {
     padding: 2rem 0.3rem;
   }
   .our_methods img {
-    width: 60%;
-    margin: 30px auto;
+    width: 35%;
+    margin: 20px auto;
+  }
+  .our_methods .our_methods-text {
+    width: 40%;
   }
   .our_methods h4 {
     margin: 50px 0px 80px 0px;
@@ -618,11 +647,17 @@ a {
   }
   .footer {
     height: auto;
-    padding: 2rem 0.3rem 1rem 0.3rem;
+    padding: 1.5rem 0.3rem 1rem 0.3rem;
   }
 }
 
 @media (max-width: 630px) {
+  .nav_header_wrapper .navbar .navbar-brand {
+    margin-left: 25px;
+  }
+  .nav_header_wrapper .navbar ul li a {
+    margin-left: 25px;
+  }
   .how .how_img img {
     right: 50%;
     -webkit-transform: translate(50%, 50%);
@@ -632,8 +667,14 @@ a {
 }
 
 @media (max-width: 560px) {
+  .nav_header_wrapper .navbar .navbar-brand {
+    margin-left: 30px;
+  }
+  .nav_header_wrapper .navbar ul li a {
+    margin-left: 30px;
+  }
   .nav_header_wrapper .jumbotron {
-    margin-top: 70px;
+    margin-top: 50px;
   }
   .how {
     padding: 1.5rem 0.3rem;
@@ -669,8 +710,11 @@ a {
     font-size: 32px;
   }
   .our_methods img {
-    width: 50%;
+    width: 35%;
     margin: 20px auto;
+  }
+  .our_methods .our_methods-text {
+    width: 50%;
   }
   .contact .contact_content h1 {
     font-size: 32px;
@@ -691,7 +735,13 @@ a {
     top: 55%;
   }
   .our_methods img {
-    width: 55%;
+    width: 40%;
+  }
+  .our_methods .our_methods-text {
+    width: 50%;
+  }
+  .footer {
+    padding: 1rem 0.3rem 0.5rem 0.3rem;
   }
 }
 
@@ -703,7 +753,10 @@ a {
     top: 65%;
   }
   .our_methods img {
-    width: 60%;
+    width: 50%;
+  }
+  .our_methods .our_methods-text {
+    width: 50%;
   }
 }
 

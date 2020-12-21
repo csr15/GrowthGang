@@ -36,39 +36,6 @@ t1.from(
 //   "-=0.5"
 // );
 
-var t3 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".how",
-    start: "center",
-  },
-});
-
-t3.from(".startup-img", { transformOrigin: "center", opacity: 0, y: 300 });
-t3.from(
-  ".startup_content",
-  {
-    transformOrigin: "center",
-    opacity: 0,
-    scale: 0,
-  },
-  "-=0.5"
-);
-
-var t4 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".startup",
-    start: "center",
-    ease: Back.easeOut.config(2),
-  },
-});
-
-t4.from(".our-work-img", {
-  transformOrigin: "center",
-  opacity: 0,
-  scale: 0,
-  y: -150,
-});
-
 var t5 = gsap.timeline({
   scrollTrigger: {
     trigger: ".our_work",
@@ -81,5 +48,5 @@ var t5 = gsap.timeline({
 t5.from(".our_methods-img", {
   transformOrigin: "center",
   opacity: 0,
-  rotate: 90,
+  rotate: -30,
 });
