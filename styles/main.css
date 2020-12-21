@@ -693,7 +693,7 @@ a {
   }
   .our_work {
     height: auto;
-    padding: 2rem 0.3rem;
+    padding: 2.5rem 0.3rem;
   }
   .our_work h1 {
     font-size: 32px;
@@ -726,7 +726,7 @@ a {
 
 @media (max-width: 450px) {
   .nav_header_wrapper .jumbotron {
-    margin-top: 70px;
+    margin-top: 50px;
   }
   .how .how_img img {
     right: 50%;
