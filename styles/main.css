@@ -54,8 +54,8 @@ a {
 
 .nav_header_wrapper {
   overflow: hidden;
-  max-height: 900px;
-  height: 800px;
+  max-height: 800px;
+  height: 700px;
   width: 100vw;
 }
 
@@ -294,7 +294,7 @@ a {
 .our_methods {
   background-image: url("../assets/images/our-methods-bg.svg");
   max-height: 700px;
-  height: 800px;
+  height: 550px;
   background-position: center;
   background-size: auto;
   color: #ffffff;
@@ -325,7 +325,7 @@ a {
 }
 
 .our_methods img {
-  width: 70%;
+  width: 55%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -642,7 +642,7 @@ a {
   }
   .our_methods {
     height: auto;
-    padding: 2rem 0.3rem;
+    padding: 1.5rem 0.3rem;
   }
   .our_methods img {
     width: 35%;
@@ -652,7 +652,7 @@ a {
     width: 40%;
   }
   .our_methods h4 {
-    margin: 50px 0px 80px 0px;
+    margin: 5px 0px 60px 0px;
   }
   .our_methods p {
     width: 100%;

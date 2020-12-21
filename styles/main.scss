@@ -63,8 +63,8 @@ a {
 //Header and Navbar
 .nav_header_wrapper {
   overflow: hidden;
-  max-height: 900px;
-  height: 800px;
+  max-height: 800px;
+  height: 700px;
   width: 100vw;
 
   .navbar {
@@ -301,7 +301,7 @@ a {
 .our_methods {
   background-image: url("../assets/images/our-methods-bg.svg");
   max-height: 700px;
-  height: 800px;
+  height: 550px;
   background-position: center;
   background-size: auto;
   color: $white;
@@ -331,7 +331,7 @@ a {
     font-size: 18px;
   }
   img {
-    width: 70%;
+    width: 55%;
     object-fit: contain;
   }
 
@@ -615,7 +615,7 @@ a {
   }
   .our_methods {
     height: auto;
-    padding: 2rem 0.3rem;
+    padding: 1.5rem 0.3rem;
     img {
       width: 35%;
       margin: 20px auto;
@@ -626,7 +626,7 @@ a {
     }
 
     h4 {
-      margin: 50px 0px 80px 0px;
+      margin: 5px 0px 60px 0px;
     }
 
     p {
